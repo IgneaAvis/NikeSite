@@ -1,0 +1,624 @@
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/gilroy-medium.ttf);
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url(../fonts/bebasneueregular.ttf);
+}
+header{
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 2px 2px -2px gray;
+    position: fixed;
+    z-index: 9999;
+    background-color:#fff;
+}
+.header_wrap{
+    padding: 25px 0 26px 86px;
+    height: 90px;
+    display: flex;
+    align-items:center;
+}
+.menu{
+    margin-left: 70px;
+    list-style-type: none;
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    padding-top: 16px;
+    &_item a{
+        font-family: 'Gilroy';
+        text-decoration: none;
+        color: black;
+    }
+    &_item a:hover{
+        color: orange;
+        transition: 0.5s;
+    }
+}
+.buttons{
+    margin-left: 580px;
+    width: 164px;
+    height: 39px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &_item{
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 39px;
+        height: 39px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 1, 0.116);
+        cursor: pointer;
+        &:hover{
+            background-color: orange;
+            transition: 2s;
+        }
+    }
+}
+.burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94px;
+    height: 90px;
+    background: #FFC700;
+    margin-left: 51px;
+    cursor: pointer;
+    display: none;
+}
+.main{
+    height: 909px;
+    &_wrap{
+        width: 1440px;
+        display: flex;
+    }
+    &_left{
+        background-color: #FFFAD0;
+        width: 527px;
+        height: 909px;
+    }
+    &_right{
+        position: relative;
+        width: 913px;
+        background: url('../img/Rectangle3.png') center center/cover no-repeat;
+    }
+    &_category{
+        font-family: 'Gilroy';
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        margin-left: 86px;
+        margin-top: 226px;
+        color: #00A79D;
+    }
+    &_line{
+        width: 112px;
+        margin-left: 86px;
+        margin-top: 7px;
+        border: 1px solid #00A79D;
+    }
+    &_title{
+        font-family: 'Bebas';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 126px;
+        line-height: 125px;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: 19px;
+        margin-left: 83px;
+        z-index: 4;
+    }
+    &_price{
+        font-family: 'Gilroy';
+        margin-top: 308px;
+        margin-left: 86px;
+        font-size: 35px;
+        line-height: 41px;
+        text-transform: uppercase;
+        color: #FF9A00;
+    }
+    &_button{
+        width: 172px;
+        height: 62px;
+        background: linear-gradient(107.81deg, #0047FF -0.31%, #EC00E2 100%);
+        box-shadow: 0px 40px 60px rgba(95, 42, 243, 0.2);
+        font-family: 'Gilroy';
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+        margin-left: 83px;
+        margin-top: 40px;
+        border: none;
+        outline: none;
+    }
+    &_image_cirkle img{
+        z-index: 1;
+        position: absolute;
+        top: 130px;
+        left: 130px;
+    }
+    &_image_text img{
+        z-index: 2;
+        position: absolute;
+        top: 88px;
+        left: 434px;
+    }
+    &_image_snickers img{
+        z-index: 3;
+        position: absolute;
+        left: -80px;
+    }
+    &_scroll{
+        height: 30px;
+        width: 150px;
+        position: absolute;
+        z-index: 5;
+        transform: rotate(90deg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        right: 0;
+        bottom: 170px;
+        &_line{
+            height: 36px;
+            transform: rotate(90deg);
+            border: 0.5px solid #FFFFFF;
+        }
+        &_text{
+            font-family: 'Gilroy';
+            color: #fff;
+            font-size: 16px;
+            line-height: 26px;
+            text-transform: lowercase;
+        }
+        &_icon{
+            transform: rotate(-90deg);
+        }
+    }
+}
+.features{
+    height: 972px;
+    position: relative;
+    &_wrapper{
+        height: 972px;
+        display: flex;
+    }
+    &_right{
+        width: 913px;
+        padding: 154px 208px 156px 190px;
+    }
+    &_left{
+        position: relative;
+        width: 527px;
+        background: url('../img/feature.png') center center/cover no-repeat
+    }
+    &_img{
+        position: absolute;
+        top: 45px;
+        left: -168px;
+        z-index: 999;
+    }
+    &_category{
+        font-family: 'Gilroy';
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #0047FF;
+    }
+    &_title{
+        font-family: 'Bebas';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 90px;
+        line-height: 95px;
+        text-transform: uppercase;
+        color: #1F170A;
+        margin-top: 20px;
+    }
+    &_descr{
+        font-family: 'Gilroy';
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #3E3E3E;
+        margin-top: 30px;
+    }
+    &_colors{
+        width: 213px;
+        height: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 45px;
+        &_name{
+            font-family: 'Gilroy';
+            font-size: 18px;
+            line-height: 32px;
+            text-transform: capitalize;
+            color: #1F170A;
+        }
+        &_items{
+            width: 126px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_item{
+            width: 21px;
+            height: 21px;
+            border-radius: 100%;
+            cursor: pointer;
+            &:first-child{
+                background-color: #DFD2BF;
+            }
+            &:nth-child(2){
+                background-color: #DBA82F;
+            }
+            &:nth-child(3){
+                background-color: #FFEF5A;
+            }
+            &:last-child{
+                background-color: #5ACEFF;
+            }
+        }
+    }
+    &_line{
+        width: 461px;
+        border: 1px solid rgba(62, 62, 62, 0.2);
+        margin-top: 28px;
+    }
+    &_sizes{
+        width: 463px;
+        height: 37px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 23px;
+        &_name{
+            font-family: 'Gilroy';
+            font-size: 18px;
+            line-height: 32px;
+            text-transform: capitalize;
+            color: #1F170A;
+        }
+        &_items{
+            width: 399px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_item{
+            width: 84px;
+            height: 37px;
+            cursor: pointer;
+            border: 1px solid rgba(62, 62, 62, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &_buttons{
+        margin-top: 56px;
+        width: 382px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_button{
+        &:first-child{
+            width: 176px;
+            height: 62px;
+            background: linear-gradient(108.16deg, #FAFF00 -1.06%, #EC00E2 100%);
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            font-family: Gilroy;
+            color: #fff;
+            outline: none;
+            border: none;
+        }
+        &:last-child{
+            width: 176px;
+            height: 62px;
+            border: 1px solid black;
+            background: none;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            font-family: Gilroy;
+            color: #000;
+        }
+    }
+}
+.categ{
+    height: 930px;
+    &_category{
+        font-family: 'Gilroy';
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 170px;
+    }
+    &_title{
+        font-family: 'Bebas';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 72px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1F170A;
+        margin-top: 30px;
+    }
+    &_wrapper{
+        width: 1230px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+        img{
+            position: absolute;
+            z-index: 999;
+        }
+        &_item{
+            position: relative;
+            width: 265px;
+            height: 406px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            &_bg{
+                width: 147px;
+                height: 147px;
+                border-radius: 100%;
+                background-color: #FFD0C3;
+                margin-top: 41px;
+            }
+            &_colors{
+                width: 83px;
+                height: 13px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 41px;
+            }
+            &_color{
+                width: 13px;
+                height: 13px;
+                border-radius: 100%;
+                &:first-child{
+                    background-color: #DFD2BF;
+                }
+                &:nth-child(2){
+                    background-color: #DBA82F;
+                }
+                &:nth-child(3){
+                    background-color: #FFEF5A;
+                }
+                &:last-child{
+                    background-color: #5ACEFF;
+                }
+            }
+            &_title{
+                margin-top: 18px;
+                font-family: 'Bebas';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 30px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            &_price{
+                font-family: 'Gilroy';
+                font-size: 20px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #FF3D00;
+                margin-top: 15px;
+            }
+            &_btn{
+                font-family: 'Gilroy';
+                margin-top: 18px;
+                width: 126px;
+                height: 36px;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+                background: linear-gradient(107.81deg, #0047FF -0.31%, #EC00E2 100%);
+                box-shadow: 0px 40px 60px rgba(95, 42, 243, 0.2);
+                border: none;
+                cursor: pointer;
+                outline: none;
+                color: #fff;
+            }
+            &:nth-child(1){
+                img{
+                    top: 14px;
+                    left: 0px;
+                }
+            }
+            &:nth-child(2){
+                img{
+                    top: -90px;
+                    left: -70px;
+                }
+            }
+            &:nth-child(3){
+                img{
+                    top: -40px;
+                    left: -34px;
+                }
+            }
+            &:nth-child(4){
+                img{
+                    top: -76px;
+                    left: -50px;
+                }
+            }
+        }
+    }
+}
+.shop{
+    width: 100%;
+    height: 680px;
+    position: relative;
+    &_img{
+        height: 680px;
+        background: url('../img/top.jpg') center center/cover no-repeat;
+    }
+    &_main{
+        width: 626px;
+        height: 300px;
+        background: rgba(255, 255, 255, 0.8);
+        opacity: 0.95;
+        backdrop-filter: blur(40px);
+        z-index: 999;
+        position: absolute;
+        top: 190px;
+        left: 50%;
+        transform: translateX(-50%);
+        &_title{
+            font-family: 'Bebas';
+            font-style: bold;
+            font-weight: normal;
+            font-size: 60px;
+            line-height: 72px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #1F170A;
+            margin-top: 67px;
+        }
+        &_btn{
+            width: 178px;
+            height: 60px;
+            background: linear-gradient(107.81deg, #0047FF -0.31%, #EC00E2 100%);
+            border: none;
+            font-family: 'Gilroy';
+            outline: none;
+            font-size: 15px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            margin-top: 34px;
+        }
+    }
+}
+footer{
+    height: 420px;
+    background-color: #02083C;
+}
+.footer_wrapper{
+    width: 1272px;
+    height: 254px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    &_item{
+        &:nth-child(2){
+            width: 128px;
+            height: 167px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &:nth-child(3){
+            width: 128px;
+            height: 167px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_title{
+            font-family: 'Gilroy';
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: capitalize;
+            color: #fff;
+            margin-top: 27px;
+        }
+        &_form{
+            width: 296px;
+            height: 29px;
+            position: relative;
+            input{
+                width: 296px;
+                height: 29px;
+                background: none;
+                color: #fff;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                outline: none;
+                margin-top: 72px;
+                padding-bottom: 20px; 
+            }
+            img{
+                position: absolute;
+                top: 70px;
+                right: 5px;
+                cursor: pointer;
+                display: none;
+            }
+        }
+        &_listtitle{
+            font-family: 'Gilroy';
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+        &_list{
+            list-style-type: none;
+            width: 128px;
+            height: 125px;
+            margin-top: 20px;
+            margin-right: 15px;
+            &_item{
+                margin-top: 6px;
+                font-family: 'Gilroy';
+                font-size: 14px;
+                line-height: 36px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        &_socialwrapper{
+            width: 200px;
+            height: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 144px;
+        }
+    }
+}
