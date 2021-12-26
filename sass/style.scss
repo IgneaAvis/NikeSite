@@ -622,3 +622,18 @@ footer{
         }
     }
 }
+.footer_line{
+    width: 1271px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer_copyright{
+    font-family: 'Gilroy';
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
